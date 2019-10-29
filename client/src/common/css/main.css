@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Google Sans";
+    src: url("../GoogleSansFont/GoogleSans-Regular.ttf") format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Google Sans";
+    src: url("../GoogleSansFont/GoogleSans-Bold.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Google Sans";
+    src: url("../GoogleSansFont/GoogleSans-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Google Sans";
+    src: url("../GoogleSansFont/GoogleSans-Italic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("../GoogleSansFont/GoogleSans-Medium.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Google Sans";
+    src: url("../GoogleSansFont/GoogleSans-MediumItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #202124;
+    cursor: auto;
+    font-family: 'Roboto',Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.444;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main_site {
+    flex: 1 0 0;
+}
+
+:focus {
+    outline: none !important;
+}
+
+nav {
+    background-color: #ee6e73;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+nav ul {
+    margin: 0;
+}
+nav ul a {
+    color: #202124;
+}
+.red_btn {
+    color: #fff;
+    background-color: #e50914;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#e50914),to(#db0510));
+    background-image: -webkit-linear-gradient(top,#e50914,#db0510);
+    background-image: -moz-linear-gradient(top,#e50914,#db0510);
+    background-image: -o-linear-gradient(top,#e50914,#db0510);
+    background-image: linear-gradient(to bottom,#e50914,#db0510);
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.45);
+    -moz-box-shadow: 0 1px 0 rgba(0,0,0,.45);
+    box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+
+.auto-margin {
+    margin: 0 auto !important;
+}
+
+@media (min-width: 767px) {
+    .container {
+        max-width: 1280px !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width:97% !important;
+        margin: 0px auto;
+    }
+}

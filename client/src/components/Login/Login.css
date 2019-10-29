@@ -1,0 +1,61 @@
+.Login{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    margin:0 auto;
+}
+
+.Login .Pad { 
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px !important;
+    width: 430px;
+    margin-top:150px;
+    align-items: 'center';
+    padding: 30px 10px;
+}
+
+.Login .Pad .Title{
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+    padding:10px;
+}
+.Login .Pad .ContentForm {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Login .Pad .ContentForm .form {
+
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.Login .Pad section {
+    width:400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    padding: 0px 10px;
+}
+
+.Login .Pad .ContentForm .button {
+    display:flex;
+    justify-content: center;
+}
+
+.Login .Pad .ContentForm .button a { display:flex; font-size:24px; align-items: center}
+
+.sendIcon { margin-left: 10px;}

@@ -1,0 +1,43 @@
+.gritItem {
+    height:400px;
+    display:flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.gritItem .progressList {
+    display:flex;
+    width:100%;
+    align-items: center;
+    flex:5;
+    justify-content: center;
+}
+
+.gritItem .titlePage{
+    flex:2;
+    font-size : 25px;
+    color: #202124 !important;
+    display:flex;
+    justify-content: center;
+    align-items : center;
+    padding: 10px !important;
+}
+
+.gritItem .detailPage{
+    flex:4;
+    font-size : 16px;
+    display:flex;
+    width: 100%;
+    background-color: inherit;
+    justify-content: center;
+    align-items : center;
+}
+
+.gritItem .detailPage ul li div {
+    display: flex;
+    justify-content: center;
+    align-items : center;
+}
+
+.gritItem .detailPage .nav{ width:100%; }

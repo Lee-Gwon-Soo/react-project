@@ -1,0 +1,138 @@
+.NewBlog {
+    display:flex;
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.mainBoard {
+    width: 100%; 
+    margin: 0 auto;
+    display:flex;
+    padding: 24px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBoard .titlePart { 
+    font-size: 42px;
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    width: 100%;
+    --x-height-multiplier: 0.342;
+    --baseline-multiplier: 0.22;
+    letter-spacing: -.02em;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 1.04;
+    letter-spacing: -.015em;
+    padding-top: 5px!important;
+}
+
+.mainBoard .titlePart .inputTitle {
+    width:100%;
+}
+
+.mainBoard .editorBoard { 
+    display: flex;
+    justify-content: center;
+    margin-top:30px;    
+    max-width: 740px;
+    width:100%;
+}
+
+.mainBoard .optionBoard {
+    display:flex;
+    width:100%;
+    max-width: 740px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+.mainBoard .optionBoard .options{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    border: 1px solid rgba(255,255,255, 0.5);
+    min-height: 200px;
+    border-radius: 2px;
+}
+
+.mainBoard .optionBoard .options .formControl {
+    min-width: 120px;
+    width:50%;
+}
+
+.mainBoard .optionBoard .options p {
+    font-size: 1rem;
+    margin-top:10px;
+    color: #9e9e9e;
+}
+
+.mainBoard .optionBoard .options .inputTitle {
+    width:100%;
+}
+
+.mainBoard .optionBoard .options p label span.active {
+    color: #4db6ac !important;
+}
+
+.mainBoard .writeButton {
+    padding:10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .mainBoard {
+        width: 100%; 
+        margin: 0 auto;
+        padding: 5px 0px;
+        display:flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainBoard .titleBoard { 
+        font-size: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        --x-height-multiplier: 0.342;
+        --baseline-multiplier: 0.22;
+        letter-spacing: -.02em;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 0;
+        line-height: 1.04;
+        letter-spacing: -.015em;
+        padding-top: 5px!important;
+    }
+
+    .mainBoard .editorBoard { 
+        display: flex;
+        justify-content: center;
+        margin-top:10px;    
+        max-width: 740px;
+        width:100%;
+    }
+
+    .mainBoard .optionBoard {
+        display:flex;
+        width:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .mainBoard .optionBoard .options .formControl {
+        width: 100%;
+    }
+}

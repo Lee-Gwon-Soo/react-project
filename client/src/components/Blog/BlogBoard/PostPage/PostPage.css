@@ -1,0 +1,58 @@
+.PostPage {
+    font-size: 1rem;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.PostPage .PostPageTitle {
+    display:flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.PostPage .PostPageTitle .draftTitle {
+    font-size: 42px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    --x-height-multiplier: 0.342;
+    --baseline-multiplier: 0.22;
+    letter-spacing: -.02em;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    line-height: 1.04;
+    letter-spacing: -.015em;
+    padding-top: 5px!important;
+}
+
+.PostPage .PostPageBoard {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top:30px;
+    max-width: 1000px;
+    width:100%;
+}
+
+@media (max-width: 600px) {
+    .PostPage {
+        font-size: 1rem;
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    .PostPage .PostPageTitle .draftTitle {
+        font-size: 32px;
+        font-family: Georgia,"Times New Roman",Times,serif!important;
+    }
+
+    .PostPage .PostPageBoard {
+        padding: 0px;
+    }
+}

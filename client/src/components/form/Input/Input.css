@@ -1,0 +1,22 @@
+textarea {
+    min-height: 100px;
+    width: 100%;
+    line-height: 150%;
+    font-size : 16px;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    resize:none;
+}
+
+select {
+    display:flex !important;
+    border:1px solid #333;
+    outline:none;
+    padding: 10px;   
+}
+
+select option {
+    display:block;
+    padding: 10px;
+}

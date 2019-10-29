@@ -1,0 +1,49 @@
+.BlogHeader {
+    position: relative;
+    display: flex;
+    width:100%;
+    padding:0px 10px;
+    height:64px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.BlogHeader ul {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin: 0px;
+    align-items: center;
+}
+
+.BlogHeader ul li {
+    display:flex;
+    width: 150px;
+    justify-content:center;
+    height: 100%;
+    cursor: pointer;
+    align-items: center;
+}
+
+.BlogHeader ul li:hover {
+    border-bottom:2px solid #df9323;
+}
+
+@media (max-width: 767px) {
+    .titleText {
+        display:flex;
+        width:100%;
+        justify-content: center;
+    }
+
+    .BlogHeader {
+        width:100%;
+        padding:0px;
+    }
+
+    .BlogHeader ul li {
+        display:flex;
+        flex:1;
+        justify-content:center;
+        height: 100%;
+    }
+}

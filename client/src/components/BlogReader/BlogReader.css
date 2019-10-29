@@ -1,0 +1,105 @@
+.BlogReader {
+    display:flex;
+    flex-direction: column;
+}
+.BlogReaderHeader {
+    width:100%;
+    padding:10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.BlogReaderHeader .category {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.BlogReaderHeader .title {
+    font-size: 56px;
+}
+.mainReadingBoard {
+    padding:10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.mainReadingBoard .authorInfo {
+    display:flex;
+}
+
+.mainReadingBoard .author {
+    overflow: visible;
+    height:0;
+    line-height: 130%;
+    border:0;
+}
+
+.mainReadingBoard .author span {
+    font-size: .77778em;
+    display:block;
+}
+
+.bookImage {
+    width: 225px;
+    height: 225px;
+}
+table.bookIntroTable tbody tr th {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+table.bookIntroTable tbody tr td {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .bookImage {
+        width: 145px;
+        height: 155px;
+    }
+
+    table.bookIntroTable tbody tr th {
+        text-align: right;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        padding: 5px;
+    }
+
+    table.bookIntroTable tbody tr td {
+        text-align: left;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        padding-left: 10px;
+}
+
+    .BlogReaderHeader {
+        padding-bottom: 0;    
+    }
+
+    .BlogReaderHeader .title {
+        line-height: 1.25;
+        margin-top:15px !important;
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+
+    .mainReadingBoard .author {
+        box-sizing: content-box;
+        margin: 0 auto;
+        max-width: 568px;
+        padding: 0 10px;
+        width: auto;
+        min-height:50px;
+        height:auto;
+        flex: 1;
+    }
+}

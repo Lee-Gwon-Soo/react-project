@@ -1,0 +1,12 @@
+.bg-white {
+    background-color: #fff;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pa4 {
+    padding: 2rem;
+}

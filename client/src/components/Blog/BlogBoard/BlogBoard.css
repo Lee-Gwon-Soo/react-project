@@ -1,0 +1,6 @@
+.BlogBoard {
+    display:flex;
+    flex-direction: column;
+}
+
+.BlogBoard h3.titleHeader { padding: 10px 20px;}

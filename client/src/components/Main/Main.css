@@ -1,0 +1,180 @@
+a, a:hover, a:link, a:active, a:visited {
+    color: #414141;
+}
+
+
+.MainContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.MainContainer .topInterestArea {
+    display:flex;
+    width:100%;
+    margin:0px;
+}
+
+.MainContainer .topInterestArea .imagePart {
+    background-position: 50% 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height:400px;
+}
+
+.MainContainer .topInterestArea .articlePart {
+    flex: 1;
+    padding: 30px 10px;
+}
+
+.MainContainer .topInterestArea .articlePart .category {
+    line-height: 1.57143;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.MainContainer .topInterestArea .articlePart .title {padding: 10px 0px;}
+.MainContainer .topInterestArea .articlePart .title h2 {
+    font-size: 2.0rem;
+    line-height:1.28;
+    font-style:normal;
+    font-weight: 300 !important;
+    margin:0px;
+}
+.MainContainer .topInterestArea .articlePart .shortContent {
+    line-height: 200%;
+    font-size: 18px;
+    padding: 15px 0px;
+    letter-spacing: 0;
+    font-family: 'Roboto', 'Open sans', sans-serif;
+    color: #414141!important;
+}
+
+.MainContainer .topInterestArea .articlePart .topArticleNavButton {
+    padding:10px 0px;
+}
+
+.MainContainer .topInterestArea .articlePart .topArticleNavButton span{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.MainContainer .topInterestArea .articlePart .topArticleNavButton span:hover i{
+    transform: translateX(30%);
+    transition: transform .1s;
+}
+
+.MainContainer .topInterestArea .articlePart .topArticleNavButton span i {
+    margin-left: 10px;
+}
+
+.MainContainer .topBlogList {
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.MainContainer .topBlogList .TopTitle {
+    font-size: 36px;
+    display:block;
+    width:100%;
+}
+
+.MainContainer .categoryList {
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.MainContainer .categoryList .TopTitle {
+    font-size: 36px;
+    display:block;
+    width:100%;
+}
+
+.aboutTitle {
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.classBoard {
+    display: block;
+    font-size: 15px;
+    padding: 10px 0px;
+    color: #202124;
+    font-family: 'Roboto',Arial,Helvetica,sans-serif;
+    line-height: 200%;
+}
+
+.divider {
+    background: #dadce0;
+    content: "";
+    width: 100%;
+    height:1px;
+    margin:0 auto;
+}
+.mainReadingBoard .profileAuthor {
+    overflow: visible;
+    height:0;
+    line-height: 130%;
+    border:0;
+}
+
+.profileAvatar {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 10px 5px;
+}
+
+.profileAuthor section span {
+    display: block;
+    font-size: .77778em;
+}
+
+@media (max-width: 767px) {
+    .MainContainer .topInterestArea .imagePart {
+        min-height:200px;
+    }
+
+    .profileAvatar {
+        width: 50px !important;
+        height: 50px !important;
+        display:inline-block !important;
+    }
+
+    .profileAuthor section {
+        display:inline-block ;
+    }
+    
+    .mainReadingBoard .profileAuthor {
+        box-sizing: content-box;
+        margin: 0 auto;
+        max-width: 568px;
+        padding: 0 10px;
+        width: auto;
+        min-height:50px;
+        height:auto;
+        flex: 1;
+    }
+
+    .profileAuthor section span {
+        display: block;
+        font-size: .77778em;
+    }
+
+    .MainContainer .topInterestArea .articlePart .title h2 {
+        font-size: 1.8rem;
+    }
+    .aboutTitle {
+        font-size: 24px;
+    }
+}
+

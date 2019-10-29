@@ -1,0 +1,38 @@
+.GritList {
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.GritList .CreateButtonArea {
+    width: 100%;
+    display:flex;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.GritList .MainGritList {
+    display:flex;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    margin : 0 auto !important;
+}
+
+.GritList .GritListBoard .titleHeader {font-size: 2rem; margin-left: 30px;}
+
+.GritList .CreateButtonArea .createText { font-size : 2rem; }
+
+.GritList .MainGritList table {width:auto; font-size:18px; }
+.GritList .MainGritList table tr {border-bottom: 1px solid #141414 !important }
+.GritList .MainGritList table tr:first-child {border-top: 1px solid #141414 !important }
+.GritList .MainGritList table tbody tr th,
+.GritList .MainGritList table tbody tr td {padding: 10px; text-align:center !important;}
+.GritList .MainGritList table tbody tr th {color: skyblue; width:30%;}
+
+@media (max-width: 600px) {
+    .GritList .GritListBoard .titleHeader {font-size: 2rem; text-align: center; margin-left: 0px;}
+}

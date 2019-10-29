@@ -1,0 +1,41 @@
+.NewGritCheck {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin : 0 auto !important;
+}
+
+.NewGritCheck .configArea {
+    width:100%;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#111;
+}
+
+.NewGritCheck .configArea section {
+    display:flex;
+    width:100%;
+    padding: 10px 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.NewGritCheck .configArea section label {margin: 10px 0px;}
+
+.NewGritCheck .configArea .buttonText {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+}
+.NewGritCheck .configArea .buttonText h3{
+    font-size: 1.5rem;
+}
+
+.NewGritCheck .configArea .buttonText h3:hover {opacity: .7; cursor:pointer}
+.NewGritCheck .configArea .buttonText h3.next { color: red}

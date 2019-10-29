@@ -1,0 +1,168 @@
+.Post {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    -ms-flex-direction: column;
+    height:auto;
+    min-height:150px;
+    -webkit-animation: scaledown 0.4s ease-out;
+    animation: scaledown 0.4s ease-out;
+    transform-origin: 50% 50%;
+    z-index:99;
+}
+
+.Post:hover {
+    /* -webkit-animation: scale 0.4s ease-out;
+    animation: scale 0.4s ease-out; */
+    /* animation-fill-mode: forwards;
+    transform-origin: 50% 50%; */
+    border-radius: 2px;
+    cursor: pointer;
+    z-index: 200;
+    background-color: #fff;
+}
+
+
+.Post.showUsage {
+    border: 3px solid #111;
+    width:calc(100% - 10px);
+}
+.Post.showUsage .circle-usage {
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height: 55px;
+    vertical-align: middle;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #111;
+    position:absolute;
+    left:-30px;
+    top:-30px;
+}
+
+.Post.showUsage .circle-usage i {
+    color: #111;
+}
+
+.Post.showUsage.selected {
+    border: 3px solid rgb(252, 164, 50);
+}
+
+.Post.showUsage.selected .circle-usage {
+    background-color: rgb(252, 164, 50);
+}
+
+.Post.checkBox {
+    border: 5px solid #ccc;
+    width:calc(100% - 10px);
+}
+.Post.checkBox .circle {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-block;
+    position:absolute;
+    left:-30px;
+    top:-30px;
+}
+
+.Post.checkBox.selected {
+    border: 5px solid rgb(52, 65, 245);
+}
+
+.Post.checkBox.selected .circle {
+    background-color: rgb(52, 65, 245);
+}
+
+.Post .mainSection {
+    flex:3;
+    flex-direction: column;
+}
+
+.Post .imageSection {
+    flex: 1;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.Post .mainSection .Title {
+    display:flex;
+    padding:10px 24px;
+    flex:1;
+}
+
+.Post .mainSection .PublishInfo {
+    display: flex;
+    color : red;
+    padding:5px 24px;
+    font-size: 1rem;
+}
+
+.Post .mainSection .OtherInformation {
+    display:flex;
+    align-items:center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.Divider {
+    margin:20px auto !important;
+    width: 50%;
+}
+
+.ButtonNavi {
+    width: 100%;
+}
+.chipAvatar.selected {
+    background-color: #f04848 !important;
+}
+.chipAvatar i{
+    width:24px;
+    height:24px;
+}
+
+@keyframes scaledown {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 767px) {
+    .Post {
+        display:flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        width:100%;
+        -ms-flex-direction: column;
+        z-index:99;
+    }    
+
+    .Post .imageSection {
+        height: 150px;
+    }
+
+    .Post.checkBox .circle {
+        left:45%;
+        top:-30px;
+    }
+
+}

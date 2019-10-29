@@ -1,0 +1,54 @@
+.Signup{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content: center;
+}
+
+.Signup .Pad { 
+    width: 400px;
+    height:auto;
+    margin-top: 70px;
+    max-height:1000px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup .Pad p {
+    line-height: 200%;
+}
+
+.Signup .Pad .Content {
+    margin-bottom : 20px;
+}
+
+.Signup .Pad .Content .Consent {
+    margin-top:15px;
+}
+
+.Signup .Pad .Button a{
+    width:100%;
+}
+
+.Signup .Pad .description {
+    font-size : 15px;
+    font-weight: 400;
+}
+
+.Signup .signupForm {
+    width: 332px;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    .Signup .Pad { 
+        margin-top: 30px;
+    }
+    .Signup .Pad h2 {
+        text-align: center;
+    }
+}

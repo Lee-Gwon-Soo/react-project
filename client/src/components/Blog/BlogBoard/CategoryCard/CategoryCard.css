@@ -1,0 +1,16 @@
+.Card {
+    width:100%;
+    min-height: 250px;
+}
+
+.Card .cardImage {
+    padding-top: 56.25%;
+    height:0;
+    cursor: pointer;
+}
+
+.Card .categoryCardContent {
+    height:100px;
+    width:100%;
+    cursor: pointer;
+}

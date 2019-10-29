@@ -1,0 +1,55 @@
+.BasicInput {
+    position:relative;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.BasicInput input:focus, 
+.BasicInput input:valid{
+    border-bottom: 1px solid #d6d6d6 !important;
+    box-shadow: none !important;
+}
+
+.BasicInput label {
+    position: absolute;
+    top:12px;
+    left:20px;
+    padding: 10px 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: #fff;
+    font-size : 16px;
+}
+
+.BasicInput input:focus + label,
+.BasicInput input:valid + label{
+    top:2px;
+    left:20px;
+    color: #03a9f4 !important;
+    font-size:12px;
+}
+
+.BasicInput input.invalid:not(:focus):invalid {
+    border: 1px solid #ff0000 !important;
+    box-shadow: none !important;
+  }
+
+  .BasicInput input.invalid:not(:focus):invalid + label {
+    color : #de071c !important;
+  }
+
+  .SmallTalk {
+    color : #de071c;
+    padding:5px;
+    margin-bottom:10px;
+  }
+
+  .InputAdornment {
+      min-width: 60px;
+  }
+
+  .InputAdornment p {
+      width:100%;
+      text-align: center;
+      color: #1c79f1;
+  }

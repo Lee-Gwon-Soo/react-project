@@ -1,0 +1,227 @@
+.wrapper {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f3f3f3 !important;
+    color: #333 !important;
+    font-size: 16px;
+    direction: ltr;
+}
+
+.NewBookstore {
+    width:80%;
+    padding-top:10px;
+    margin: 0px auto;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.newbookstoreContainer {
+    margin-top: 150px;
+}
+
+.NewBookstore .Titlename { 
+    display:flex; 
+    font-size: 2rem;
+    padding: 24px 16px;
+    border-bottom : 1px solid #d4d4d4;
+}
+
+.NewBookstore .FormBoard { display:flex; flex:1; flex-direction:column; }
+.NewBookstore .FormBoard .formColumn {display:flex; width:100%; flex-direction: row; padding: 10px; border-bottom : 1px solid #d4d4d4;}
+.NewBookstore .FormBoard .formColumn .formTitle { font-size: 24px; flex:2; color: #d4d4d4; font-weight: 600;}
+.NewBookstore .FormBoard .formColumn .formMain { font-size: 18px; flex:4; padding: 20px; }
+.NewBookstore .FormBoard .formColumn .formMain .field { display:flex; width:100%; flex-direction: row; }
+.NewBookstore .FormBoard .formColumn .formMain .field .inputField {display:flex; flex:1}
+.NewBookstore .FormBoard .formColumn .formMain .field .buttonField {display:flex; justify-content: center; align-items:flex-start; padding-top:10px;}
+
+ul.BookstorePlan { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+ul.BookstorePlan li.active {
+    border:2px solid #3333FF;
+}
+
+ul.BookstorePlan li {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 100px;
+    border: 2px solid #ccc;
+    margin-bottom: .5em;
+    width: 100%;
+    cursor: pointer;
+}
+
+ul.BookstorePlan li section {
+    display:flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.BookstorePlan li div {
+    display: flex;
+    flex : 1;
+    padding: 10px;
+    font-size :14px;
+}
+
+.buttonArea {
+    display:flex;
+    width:100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newStoreFooter {
+    position: absolute;
+    bottom : 10px;
+    left: 10px;
+}
+
+.stepHelper {
+    position: fixed;
+    left: 60px;
+    top: 40%;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    color: rgba(66,133,244,0.749);
+}
+
+.stepHelperBoard { 
+    background-color: white;
+    -webkit-user-select: none;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    border: 0;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    height: 48px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    width: 48px;
+    z-index: 0;
+}
+
+.stepHelperBoard:hover {
+    background-color : rgba(66,133,244,0.2);
+}
+
+.helperContent {
+    top:50%;
+    position: relative;
+}
+
+.stepBackButton {
+    display:none !important;
+}
+
+@media (max-width: 600px) {
+
+    .NewBookstore {
+        width:100%;
+        padding-top:10px;
+        margin: 0px auto;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .NewBookstore .Titlename { 
+        display:flex; 
+        align-items: center;
+        justify-content: center;
+        border-bottom : 1px solid #d4d4d4;
+    }
+
+    .NewBookstore .FormBoard { display:flex; flex:1; flex-direction:column; }
+    .NewBookstore .FormBoard .formColumn {display:flex; width:100%; flex-direction: column; padding: 10px; border-bottom : 1px solid #d4d4d4;}
+    .NewBookstore .FormBoard .formColumn .formTitle { font-size: 24px; flex:2; color: #4f91f5; font-weight: 600;}
+    .NewBookstore .FormBoard .formColumn .formMain { font-size: 18px; flex:4; padding: 20px; }
+    .NewBookstore .FormBoard .formColumn .formMain .field { display:flex; width:100%; flex-direction: column; }
+    .NewBookstore .FormBoard .formColumn .formMain .field .inputField {display:flex;  }
+    .NewBookstore .FormBoard .formColumn .formMain .field .buttonField {
+            display:flex; 
+            justify-content: center; 
+            align-items:flex-start; 
+            padding-top:10px;    
+            margin-top: -30px;
+            margin-bottom: 20px;
+    }
+
+    ul.BookstorePlan { 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul.BookstorePlan li.active {
+        border:2px solid #3333FF;
+    }
+
+    ul.BookstorePlan li {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        border: 2px solid #ccc;
+        margin-bottom: .5em;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    ul.BookstorePlan li section {
+        display:flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.BookstorePlan li div {
+        display: flex;
+        flex : 1;
+        padding: 10px;
+        font-size :14px;
+    }
+
+    ul.BookstorePlan li div p {
+        line-height: 200%;
+    }
+
+    ul.BookstorePlan li div p span {
+        color:#f72626;
+    }
+
+    .buttonArea {
+        display:flex;
+        width:100%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stepHelper {
+        display:none;
+    }
+
+    .newbookstoreContainer {
+        margin-top: 30px;
+    }
+
+    .stepBackButton {
+        display: inline-block !important;
+    }
+}
+

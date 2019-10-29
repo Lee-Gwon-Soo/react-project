@@ -1,0 +1,34 @@
+.Bookshelf {
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+}
+
+.Bookshelf .newButtonArea {
+    width:100%;
+    padding: 20px 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bookshelf .saveButtonArea {
+    width:100%;
+    padding: 20px 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.Bookshelf .newButtonArea h2:hover { cursor: pointer; opacity: .7;}
+.Bookshelf .saveButtonArea .backbutton { margin-right: 50px; color: #ccc;}
+.Bookshelf .saveButtonArea h2:hover { cursor: pointer; opacity: .7;}
+
+.Bookshelf .boardArea {
+    width:100%;
+    padding: 20px 30px;
+    display:flex;
+    flex: 1;
+}

@@ -1,0 +1,35 @@
+.TextInput {
+    position:relative;
+    width:100%;
+}
+.TextInput input {
+    color: #fff;
+    font-size : 16px;
+    outline:none;
+    background:transparent;
+    text-align: left;
+}
+
+.TextInput label {
+    position: absolute;
+    top:-10px;
+    left:10px;
+    padding: 10px 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: #fff;
+    font-size : 16px;
+}
+
+.TextInput input:focus + label:not(.active),
+.TextInput input:valid + label:not(.active){
+    top:-30px;
+    left:10px;
+    font-size:12px;
+}
+
+.TextInput input:focus + label,
+.TextInput input:valid + label{
+    color: #03a9f4 !important;
+}
+

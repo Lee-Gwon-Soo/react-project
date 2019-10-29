@@ -1,0 +1,53 @@
+.ReplyBoard {
+    background-color: #fff;
+    border-top: 1px solid #c5c5c5;
+    margin: 3px 2px 0 2px;
+    white-space: normal;
+}
+
+.ReplyBoard .title {
+    background-color: #f5f5f5;
+    border: 1px solid #c5c5c5;
+    border-bottom: 0;
+    border-top: 0;
+    color: #262626;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 23px 25px 23px 25px;
+    position: relative;
+    text-transform: none;
+}
+.ReplyBoard .list {
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #c5c5c5;
+    border-top: 0;
+    min-height: 2px;
+    position: relative;
+    top: -2px;
+    padding: 0;
+}
+.ReplyBoard .list .subtitle {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    padding: 15px 15px 15px 15px;
+}
+
+.ReplyBoard .list .replyList {
+    box-sizing: border-box;
+    background-color: transparent;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0 0 0 0;
+    outline: none;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.newReply {
+    border: 1px solid #c5c5c5;
+    border-bottom: 0;
+    border-top: 0;
+}

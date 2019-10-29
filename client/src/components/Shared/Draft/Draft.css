@@ -1,0 +1,169 @@
+.RichEditor-root * {
+    -webkit-user-select: text;
+    user-select: text;
+    word-break: break-all;
+}
+
+.RichEditor-root {
+    width:100%;
+}
+.empty {
+  position:relative;
+  z-index:1;
+  width:100%;
+  height: 100px;
+}
+.RichEditor-editor {
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: 'Roboto',Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    min-height:400px;
+    color: #202124;
+    letter-spacing: -.003em;
+    background: #fff;
+    color: #202124;
+    cursor: auto;
+    font-weight: 300;
+    line-height: 1.625;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+  
+  .RichEditor-editor .public-DraftEditorPlaceholder-root,
+  .RichEditor-editor .public-DraftEditor-content {
+    margin: 0 -15px -15px;
+    padding: 15px;
+    padding-top: 0px;
+  }
+  
+  .RichEditor-editor .public-DraftEditor-content {
+    min-height: 100px;
+  }
+
+  .RichEditor-editor .public-DraftEditor-content div[data-block="true"] {
+    margin-top:0px;
+  }
+  
+  .RichEditor-editor .public-DraftEditor-content div[data-block="true"]:first-child {
+    margin-top: 0px;
+  }
+  
+  .RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+    display: none;
+  }
+  
+  .RichEditor-editor .RichEditor-blockquote {
+    border-left: 5px solid #eee;
+    color: #666;
+    font-family: 'Hoefler Text', 'Georgia', serif;
+    font-style: italic;
+    margin: 16px 0;
+    padding: 10px 20px;
+  }
+  
+  .RichEditor-editor .public-DraftStyleDefault-pre {
+    background-color :#878787;
+    font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  .RichEditor-controls {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+    user-select: none;
+  }
+  
+  .RichEditor-styleButton {
+    color: #999;
+    cursor: pointer;
+    margin-right: 16px;
+    padding: 2px 0;
+    display: inline-block;
+  }
+  
+  .RichEditor-activeButton {
+    color: #5890ff;
+  }
+
+  .hiddenInput {
+      display:none;
+  }
+
+  figure {
+    margin:0 !important;
+  }
+
+  .public-DraftEditorPlaceholder-root.public-DraftEditorPlaceholder-hasFocus {
+    display:none;
+  }
+
+  @media (max-width: 600px) {
+    .RichEditor-editor {
+      font-size: 18px;
+    }
+  }
+
+
+  .pullBlockquote {
+    --x-height-multiplier: 0.342;
+    --baseline-multiplier: 0.22;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: rgb(88, 87, 87);
+    border-left: 5px solid #eee;
+    margin-left: -1.88px;
+    line-height: 1.48;
+    letter-spacing: -.012em;
+    border: none;
+    padding: 0;
+    padding-left: 50px;
+    text-align: left;
+  }
+
+  div + .pullBlockquote:first-child {
+    border-top: 1px solid #eee !important;
+  }
+
+  pre.customCodeBlock {
+    background: rgba(0,0,0,.05);
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 16px;
+    margin-top: 43px;
+    overflow: auto;
+    display: block;
+  }
+  
+  
+  .editor {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    cursor: text;
+    padding: 16px;
+    border-radius: 2px;
+    margin-bottom: 2em;
+    background: #fefefe;
+    min-height: 400px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .readonly {
+    border: none !important;
+  }
+
+
+  .readonly img{
+    box-shadow: none !important;
+}
+
+  .editor :global(.public-DraftEditor-content) {
+    min-height: 140px;
+  }
