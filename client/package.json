@@ -76,7 +76,7 @@
     "random-string": "^0.2.0",
     "react": "^16.4.2",
     "react-chartist": "^0.13.1",
-    "react-dev-utils": "^5.0.2",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-emotion": "^9.2.8",
     "react-icons-kit": "^1.1.7",
